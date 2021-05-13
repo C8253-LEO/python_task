@@ -1,0 +1,28 @@
+age = str(input("Are you a cigarette addict older than 75 years old?:(yes/no)"))
+while age != 'yes':
+    while age !='no':
+        print("Please enter as (yes/no) :")
+        age = str(input("Are you a cigarette addict older than 75 years old?:(yes/no)"))         
+        break
+    break
+
+chronic = str(input("Do you have a severe chronic disease?:(yes/no)"))
+while chronic!= 'yes':
+    while chronic !='no':
+        print("Please enter as (yes/no) :")
+        chronic = str(input("Do you have a severe chronic disease?:(yes/no)"))         
+        break
+    break
+
+immune = str(input("Is your immune system too weak?:(yes/no)"))
+while immune != 'yes':
+    while immune !='no':
+        print("Please enter as (yes/no) :")
+        immune = str(input("Is your immune system too weak?:(yes/no)"))         
+        break
+    break
+
+if age == 'yes' or chronic == 'yes' or immune == 'yes':
+    print('You are in risky group')
+else:
+    print('You are not in risky group')
