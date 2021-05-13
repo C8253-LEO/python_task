@@ -1,0 +1,13 @@
+def fibonacci(x):
+    pre_number = 0
+    last_number = 1
+    temp_number = 0
+    fibo_list = [0]
+    while last_number < x:
+        fibo_list.append(last_number)
+        temp_number = last_number + pre_number
+        pre_number = last_number
+        last_number = temp_number        
+    return fibo_list
+
+print(fibonacci(56))
