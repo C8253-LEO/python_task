@@ -1,0 +1,13 @@
+number = int(input("Please enter a positive integer number :"))
+while number < 1:
+    print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
+    number = int(input("Please enter a positive integer number :"))
+n= str(number)
+summ = 0
+for x in n:
+    y = int(x)**len(n)
+    summ += y
+if(number == summ):
+    print("{} is a Armstrong number.".format (number))
+else:
+    print("{} is not Armstong number.".format(number))
